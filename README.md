@@ -15,5 +15,5 @@
 # 检查python版本
 python --version
 # 设置pip国内镜像
-pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 ```
