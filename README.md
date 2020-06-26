@@ -2,13 +2,13 @@
 
 [Python 3.8.3 win10 x64 安装包](https://www.python.org/ftp/python/3.8.3/python-3.8.3-amd64.exe)
 
-![](./01.png)
+![](https://github.com/208352363/Using_Django/raw/准备工作-安装python/01.png)
 ---
-![](./02.png)
+![](https://github.com/208352363/Using_Django/raw/准备工作-安装python/02.png)
 ---
-![](./03.png)
+![](https://github.com/208352363/Using_Django/raw/准备工作-安装python/03.png)
 ---
-![](./04.png)
+![](https://github.com/208352363/Using_Django/raw/准备工作-安装python/04.png)
 ---
 
 ```shell script
