@@ -1,18 +1,20 @@
-Django知识点集锦
+Pycharm方式
+![New Project...](01.png)
 ---
-大家好, 在本系列视频中, 我将以短视频的方式逐个讲解Django知识点, 讲解过程中通常会辅以示例代码. 
-
-知识点目录参考了官方文档 [**Using Django**](https://docs.djangoproject.com/en/3.0/topics/), 不完全一致.
-
-* 系列简介
-* 准备工作
-    * 安装Python
-    * 安装Git
-    * 安装Pycharm
-    * (可选)安装MySQL
-    * (可选)安装Postman
-    * (可选)安装FireFox Developer Edition
-    * 创建项目(使用Pycharm或命令行)
-    * 常用配置(git和settings.py)
-    * 懒人运行manage.py的方法
-
+命令行方式
+```shell script
+mkdir myproject
+cd myproject
+# 创建虚拟环境
+python -m venv venv
+# 激活虚拟环境
+./venv/Scripts/activate.bat
+# 安装依赖
+pip install django mysqlclient djangorestframework
+# 导出依赖至requirements.txt
+pip freeze > requirements.txt
+# 创建Django项目
+django-admin startproject myproject .
+# 创建Django app
+django-admin startapp myapp
+```
