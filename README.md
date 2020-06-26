@@ -2,13 +2,13 @@
 
 [Python 3.8.3 win10 x64 安装包](https://www.python.org/ftp/python/3.8.3/python-3.8.3-amd64.exe)
 
-![](01.png)
+![步骤1](01.png)
 ---
-![](02.png)
+![步骤2](02.png)
 ---
-![](03.png)
+![步骤3](03.png)
 ---
-![](04.png)
+![步骤4](04.png)
 ---
 
 ```shell script
