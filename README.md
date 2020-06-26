@@ -6,7 +6,7 @@ Django知识点集锦
 
 * 系列简介
 * 准备工作
-    * 安装Python
+    * [安装Python](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%AE%89%E8%A3%85Python)
     * 安装Git
     * 安装Pycharm
     * (可选)安装MySQL
