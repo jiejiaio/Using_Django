@@ -1,18 +1,19 @@
-Django知识点集锦
+[Python官方下载页](https://www.python.org/downloads/release)
+
+[Python 3.8.3 win10 x64 安装包](https://www.python.org/ftp/python/3.8.3/python-3.8.3-amd64.exe)
+
+![](./01.png)
 ---
-大家好, 在本系列视频中, 我将以短视频的方式逐个讲解Django知识点, 讲解过程中通常会辅以示例代码. 
+![](./02.png)
+---
+![](./03.png)
+---
+![](./04.png)
+---
 
-知识点目录参考了官方文档 [**Using Django**](https://docs.djangoproject.com/en/3.0/topics/), 不完全一致.
-
-* 系列简介
-* 准备工作
-    * 安装Python
-    * 安装Git
-    * 安装Pycharm
-    * (可选)安装MySQL
-    * (可选)安装Postman
-    * (可选)安装FireFox Developer Edition
-    * 创建项目(使用Pycharm或命令行)
-    * 常用配置(git和settings.py)
-    * 懒人运行manage.py的方法
-
+```shell script
+# 检查python版本
+python --version
+# 设置pip国内镜像
+pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
+```
