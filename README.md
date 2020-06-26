@@ -1,18 +1,39 @@
-Django知识点集锦
+[MySQL官方下载页](https://dev.mysql.com/downloads/mysql/)
+
+[MySQL 8.0.20 msi 安装包](https://cdn.mysql.com//Downloads/MySQLInstaller/mysql-installer-community-8.0.20.0.msi)
+
+![步骤01](01.png)
 ---
-大家好, 在本系列视频中, 我将以短视频的方式逐个讲解Django知识点, 讲解过程中通常会辅以示例代码. 
-
-知识点目录参考了官方文档 [**Using Django**](https://docs.djangoproject.com/en/3.0/topics/), 不完全一致.
-
-* 系列简介
-* 准备工作
-    * 安装Python
-    * 安装Git
-    * 安装Pycharm
-    * (可选)安装MySQL
-    * (可选)安装Postman
-    * (可选)安装FireFox Developer Edition
-    * 创建项目(使用Pycharm或命令行)
-    * 常用配置(git和settings.py)
-    * 懒人运行manage.py的方法
-
+![步骤02](02.png)
+---
+![步骤03](03.png)
+---
+![步骤04](04.png)
+---
+![步骤05](05.png)
+---
+![步骤06](06.png)
+---
+![步骤07](07.png)
+---
+![步骤08](08.png)
+---
+![步骤09](09.png)
+---
+![步骤10](10.png)
+---
+![步骤11](11.png)
+---
+![步骤12](12.png)
+---
+![步骤13](13.png)
+---
+![步骤14](14.png)
+---
+![步骤15](15.png)
+---
+![步骤16](16.png)
+---
+![步骤17](17.png)
+---
+![步骤18](18.png)
