@@ -13,6 +13,6 @@ Django知识点集锦
     * (可选)安装Postman
     * (可选)安装FireFox Developer Edition
     * 创建项目(使用Pycharm或命令行)
-    * 常用配置(.gitignore和settings.py)
+    * 常用配置(git和settings.py)
     * 懒人运行manage.py的方法
 
