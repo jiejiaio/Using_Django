@@ -22,6 +22,9 @@ django-admin startapp myapp
 ```
 通过命令行创建的项目, 需要在Pycharm中手动设置Python解释器
 
-![](02.png)
-![](03.png)
-![](04.png)
+![步骤1](02.png)
+---
+![步骤2](03.png)
+---
+![步骤3](04.png)
+---
