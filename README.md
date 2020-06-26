@@ -1,14 +1,16 @@
 Pycharm方式
 ![New Project...](01.png)
 ---
-命令行方式
+windows 命令行方式
 ```shell script
 mkdir myproject
 cd myproject
 # 创建虚拟环境
 python -m venv venv
 # 激活虚拟环境
-./venv/Scripts/activate.bat
+.\venv\Scripts\activate.bat
+# 升级pip, 如有报错忽略
+pip install -U pip
 # 安装依赖
 pip install django mysqlclient djangorestframework
 # 导出依赖至requirements.txt
@@ -18,3 +20,8 @@ django-admin startproject myproject .
 # 创建Django app
 django-admin startapp myapp
 ```
+通过命令行创建的项目, 需要在Pycharm中手动设置Python解释器
+
+![](02.png)
+![](03.png)
+![](04.png)
