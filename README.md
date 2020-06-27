@@ -1,4 +1,5 @@
 Pycharm方式
+
 ![New Project...](01.png)
 ---
 windows 命令行方式
@@ -15,6 +16,7 @@ pip install -U pip
 pip install django mysqlclient djangorestframework
 # 导出依赖至requirements.txt
 pip freeze > requirements.txt
+# 通过requirements.txt 安装依赖: pip install -r requirements.txt
 # 创建Django项目
 django-admin startproject myproject .
 # 创建Django app
@@ -32,7 +34,7 @@ django-admin startapp myapp
 版本控制 命令行
 ```shell
 # 在git bash中运行
-echo venv/ .idea/ __pycache__/ media/ *.log *.sqlite3 > .gitignoree
+echo venv/ .idea/ __pycache__/ media/ *.log *.sqlite3 > .gitignore
 git init && git add . && git commit -m "项目初始化"
 ```
 
@@ -47,7 +49,7 @@ git init && git add . && git commit -m "项目初始化"
 
 ![步骤3](09.png)
 ---
-![步骤4](08.png)
+![步骤4](07.png)
 ---
-![步骤5](07.png)
+![步骤5](08.png)
 ---
