@@ -1,5 +1,5 @@
+settings.py
 ```python
-# ./settings.py
 SECRET_KEY = os.getenv('SECRET_KEY', '7&1y4zwt45)!g0t1%p^*%1kmn3n6)t*-ertsns1*du72*www(1')
 # 注意 bool('False') = True
 DEBUG = os.getenv('DEBUG', 'True') != 'False'
@@ -29,14 +29,22 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
-# ./urls.py 开始
+```
+
+urls.py
+
+```
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
     ...
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-# urls.py 结束
+```
+
+settings.py 继续
+
+```
 AUTH_USER_MODEL = 'users.User'
 LOGGING = {
     'version': 1,
