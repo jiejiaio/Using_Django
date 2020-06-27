@@ -33,7 +33,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 urls.py
 
-```
+```python
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
@@ -44,7 +44,7 @@ urlpatterns = [
 
 settings.py 继续
 
-```
+```python
 AUTH_USER_MODEL = 'users.User'
 LOGGING = {
     'version': 1,
