@@ -28,3 +28,26 @@ django-admin startapp myapp
 ---
 ![步骤3](04.png)
 ---
+
+版本控制 命令行
+```shell
+# 在git bash中运行
+echo venv/ .idea/ __pycache__/ media/ *.log *.sqlite3 > .gitignoree
+git init && git add . && git commit -m "项目初始化"
+```
+
+版本控制 Pycharm
+
+![步骤1](05.png)
+---
+![步骤2](06.png)
+---
+
+上传至GitHub
+
+![步骤3](09.png)
+---
+![步骤4](08.png)
+---
+![步骤5](07.png)
+---
