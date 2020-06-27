@@ -8,9 +8,9 @@ Django知识点集锦
 
 知识点目录参考了官方文档 [**Using Django**](https://docs.djangoproject.com/en/3.0/topics/), 不完全一致.
 
-点击以下的每个章节链接都会跳转到对应的Branch, 也可以在Github Branch中搜索你想看的章节
+点击以下的每个章节链接都会跳转到对应的**Branch**, 也可以在Github Branch中搜索你想看的章节
 
-欢迎在Issues面板中提出你的问题，建议和观点.
+欢迎在 [**Issues**](https://github.com/208352363/Using_Django/issues) 面板中提出你的问题，建议和观点.
 
 * 系列简介
 * 准备工作
