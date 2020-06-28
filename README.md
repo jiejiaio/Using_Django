@@ -1,18 +1,29 @@
-Django知识点集锦
----
-大家好, 在本系列视频中, 我将以短视频的方式逐个讲解Django知识点, 讲解过程中通常会辅以示例代码. 
+- 一个Model类*通常*对应数据库中的一张表
+- 一个Model实例对应数据表的一行记录
+- Model中的每个属性*通常*对应数据表的一个字段(列名)
+- Django给每个Model提供了增删改查的API
 
-知识点目录参考了官方文档 [**Using Django**](https://docs.djangoproject.com/en/3.0/topics/), 不完全一致.
+Django代码
 
-* 系列简介
-* 准备工作
-    * 安装Python
-    * 安装Git
-    * 安装Pycharm
-    * (可选)安装MySQL
-    * (可选)安装Postman
-    * (可选)安装FireFox Developer Edition
-    * 创建项目(使用Pycharm或命令行)
-    * 常用配置(git和settings.py)
-    * 懒人运行manage.py的方法
+```python
+from django.db import models
 
+class Question(models.Model):
+    text = models.CharField(max_length=200)
+    pub_date = models.DateTimeField()
+```
+
+建表SQL
+  - 表名称是app_label + '_' + model类名(小写,下划线分词)
+  - id是Django自动帮我们加上的
+
+```mysql
+CREATE TABLE `polls_question` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `text` varchar(200) NOT NULL,
+  `pub_date` datetime(6) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+```
+
+![Question表](01.png)
