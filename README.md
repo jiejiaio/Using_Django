@@ -53,7 +53,7 @@ class Task(models.Model):
 `blank`仅仅跟表单校验有关, 为`True`时允许用户不填, 为`False`时要求用户必填  
 开发者直接对Field赋值(如 `title=''`)不会受到`blank`的限制
 ##### primary_key
-Django默认会给Model创建一个`IntegerField`作为主键, 名称为`id`  
+Django默认会给Model创建一个`AutoField`作为主键, 名称为`id`, 类型是整数, 并且自增  
 如果手动指定, Django将不会自动创建, 例如:  
 ```python
 class Blog(models.Model):
