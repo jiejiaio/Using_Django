@@ -23,3 +23,13 @@ Django知识点集锦
     * [项目的Git和Github配置](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE(%E4%BD%BF%E7%94%A8Pycharm%E6%88%96%E5%91%BD%E4%BB%A4%E8%A1%8C))
     * [常用配置(settings.py)](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE(settings.py))
     * [懒人运行manage.py的方法](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E6%87%92%E4%BA%BA%E8%BF%90%E8%A1%8Cmanage.py%E7%9A%84%E6%96%B9%E6%B3%95)
+* Model和数据库
+    * Model
+        * [Model简介](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
+        * [Field简介](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
+        * [Field一对一,多对一,多对多](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
+        * [Model之Meta,属性,方法](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
+        * Model继承
+            * [抽象父类](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
+            * [多表继承](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
+            * [代理Model](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
