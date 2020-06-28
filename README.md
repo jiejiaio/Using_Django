@@ -12,12 +12,12 @@
 # 对于普通Field, 第一个参数就是 verbose_name
 title = models.CharField('标题', max_length=100)
 # 对于关系型Field, 第一个参数必须是关联的Model
-owner = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='所有者')
+owner = models.ForeignKey(User, null=True, on_delete=models.CASCADE, verbose_name='所有者')
 ```
 ##### help_text
 在表单输入框旁边, 会显示help_text, html标签会原样保留; 也可以仅仅把它当成注释
 ```python
-body = models.TextField('正文', help_text='博客的<em>正文</em>')
+body = models.TextField('正文', blank=True, help_text='博客的<em>正文</em>')
 ```
 ##### default
 默认值, 可以是callable(lambda除外),可以是值,不能是可变对象(list,set...)
@@ -53,4 +53,21 @@ class Task(models.Model):
 `blank`仅仅跟表单校验有关, 为`True`时允许用户不填, 为`False`时要求用户必填  
 开发者直接对Field赋值(如 `title=''`)不会受到`blank`的限制
 ##### primary_key
+Django默认会给Model创建一个`IntegerField`作为主键, 名称为`id`  
+如果手动指定, Django将不会自动创建, 例如:  
+```python
+class Blog(models.Model):
+    # title 是主键
+    title = models.CharField(max_length=50, primary_key=True)
+    content = models.TextField()
+```
+主键是只读的, 如果改变了主键再执行`save()`, 将会在数据库插入一条新记录
 ##### unique
+唯一约束, 如果为`True`, Django会在数据库中创建唯一索引, 例如:  
+```python
+username = models.CharField(max_length=30, unique=True)
+```
+MySQL
+```mysql
+UNIQUE KEY `username` (`username`)
+```
