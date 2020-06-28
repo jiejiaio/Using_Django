@@ -16,6 +16,8 @@ Django知识点集锦
 ```shell script
 # 克隆仓库到本地
 git clone https://github.com/208352363/Using_Django.git
+# 查看所有分支(章节), 建议在Git Bash窗口中运行以避免乱码
+git branch
 # 切换分支(章节) `git checkout 分支名称` 例如:
 git checkout Model和数据库-Model-Model简介
 ```
