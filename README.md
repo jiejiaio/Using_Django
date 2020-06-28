@@ -14,8 +14,9 @@ Django知识点集锦
     欢迎在 [**Issues**](https://github.com/208352363/Using_Django/issues) 面板中提出你的问题，建议和观点.
 * 操作指南 
 ```shell script
+# 克隆仓库到本地
 git clone https://github.com/208352363/Using_Django.git
-# git checkout 分支名称, 例如:
+# 切换分支(章节) `git checkout 分支名称` 例如:
 git checkout Model和数据库-Model-Model简介
 ```
 * 准备工作
