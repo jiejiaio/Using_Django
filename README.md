@@ -1,18 +1,43 @@
-Django知识点集锦
----
-大家好, 在本系列视频中, 我将以短视频的方式逐个讲解Django知识点, 讲解过程中通常会辅以示例代码. 
+manage.py
 
-知识点目录参考了官方文档 [**Using Django**](https://docs.djangoproject.com/en/3.0/topics/), 不完全一致.
+```python
+def main(commands=None, *ids):
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ReasonableProductivityAPI.settings')
+    try:
+        from django.core.management import execute_from_command_line
+    except ImportError as exc:
+        raise ImportError(
+            "Couldn't import Django. Are you sure it's installed and "
+            "available on your PYTHONPATH environment variable? Did you "
+            "forget to activate a virtual environment?"
+        ) from exc
+    print(sys.argv)
+    if commands is None:
+        execute_from_command_line(sys.argv)
+    else:
+        for _id in ids:
+            execute_from_command_line(f'manage.py {commands[_id]}'.split())
 
-* 系列简介
-* 准备工作
-    * 安装Python
-    * 安装Git
-    * 安装Pycharm
-    * (可选)安装MySQL
-    * (可选)安装Postman
-    * (可选)安装FireFox Developer Edition
-    * 创建项目(使用Pycharm或命令行)
-    * 常用配置(git和settings.py)
-    * 懒人运行manage.py的方法
 
+for key, value in {
+    'username': 'jiejia',
+    'password': 'qweasd',
+    'email': 'jiejia@example.com'
+}.items():
+    # os.environ.setdefault: 如果环境变量不存在, 会使用默认值; 如果存在, 使用已存在的值
+    os.environ.setdefault(f'DJANGO_SUPERUSER_{key.upper()}', value)
+
+COMMANDS = {
+    1: 'runserver 8000',
+    2: 'startapp users',
+    3: 'makemigrations',
+    4: 'migrate',
+    5: 'createsuperuser --no-input --skip-check',
+    6: 'collectstatic --no-input',
+    7: 'test',
+}
+
+if __name__ == '__main__':
+    # main()
+    main(COMMANDS, 1)
+```
