@@ -1,18 +1,15 @@
-Django知识点集锦
----
-大家好, 在本系列视频中, 我将以短视频的方式逐个讲解Django知识点, 讲解过程中通常会辅以示例代码. 
-
-知识点目录参考了官方文档 [**Using Django**](https://docs.djangoproject.com/en/3.0/topics/), 不完全一致.
-
-* 系列简介
-* 准备工作
-    * 安装Python
-    * 安装Git
-    * 安装Pycharm
-    * (可选)安装MySQL
-    * (可选)安装Postman
-    * (可选)安装FireFox Developer Edition
-    * 创建项目(使用Pycharm或命令行)
-    * 常用配置(git和settings.py)
-    * 懒人运行manage.py的方法
+Django处理请求的步骤:
+1. request中有没有`urlconf`属性(`HttpRequest.urlconf`)?  
+&nbsp;&nbsp;有: 使用指定的`urlconf`  
+&nbsp;&nbsp;无: 使用settings.py中的`ROOT_URLCONF`  
+2. 导入`urlconf`中的`urlpatterns`变量  
+&nbsp;&nbsp;`urlpatterns`通常是个`list`  
+&nbsp;&nbsp;`urlpatterns`中的元素是django的`path`或`re_path`    
+3. 遍历`urlpatterns`, 逐个匹配URL  
+&nbsp;&nbsp;请求的url存放在`HttpRequest.path_info`属性中  
+&nbsp;&nbsp;匹配到之后即停止遍历  
+4. 匹配成功后, Django会调用相应的视图(view)来处理请求, 两种数据会传递给view:  
+&nbsp;&nbsp;`HttpRequest`实例  
+&nbsp;&nbsp;匹配了urlpattern中的正则的参数, 包括有名字的参数和没名字的参数  
+5. 如果第3步没有匹配到, 或第4步抛出了异常, Django会调用特定的视图(views), 这些视图专门用于处理异常
 
