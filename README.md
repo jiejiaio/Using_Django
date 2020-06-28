@@ -35,7 +35,7 @@ git checkout Model和数据库-Model-Model简介
 * Model和数据库
     * Model
         * [Model简介](https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Model%E7%AE%80%E4%BB%8B)
-        * Field简介
+        * [Field简介](https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Field%E7%AE%80%E4%BB%8B)
         * Field一对一,多对一,多对多
         * Model之Meta,属性,方法
         * Model继承
