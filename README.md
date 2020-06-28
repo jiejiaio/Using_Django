@@ -1,18 +1,37 @@
-Django知识点集锦
----
-大家好, 在本系列视频中, 我将以短视频的方式逐个讲解Django知识点, 讲解过程中通常会辅以示例代码. 
+#### 关于Field
+- 在Model类中, Field就是类的属性, 对应数据表的字段
+- Field属性的命名不能与Django API冲突, 例如`save`, `clean`, `delete`
+- 不同种类的Field对应不同类型的数据库字段, 如`CharField`对应`VARCHAR`, `IntegerField`对应`INT`
+- Field的class也会影响Html表单的渲染, 不同的Field对应不同的`input`标签
+- Field有一些基本的校验规则,例如默认`null=False`,`blank=False`;`CharField`要求指定`max_length`
 
-知识点目录参考了官方文档 [**Using Django**](https://docs.djangoproject.com/en/3.0/topics/), 不完全一致.
-
-* 系列简介
-* 准备工作
-    * 安装Python
-    * 安装Git
-    * 安装Pycharm
-    * (可选)安装MySQL
-    * (可选)安装Postman
-    * (可选)安装FireFox Developer Edition
-    * 创建项目(使用Pycharm或命令行)
-    * 常用配置(git和settings.py)
-    * 懒人运行manage.py的方法
-
+#### Field 常用参数
+##### verbose_name
+在前端页面(如admin界面,表单等)显示时, 会自动使用verbose_name
+```python
+# 对于普通Field, 第一个参数就是 verbose_name
+title = models.CharField('标题', max_length=100)
+# 对于关系型Field, 第一个参数必须是关联的Model
+owner = models.ForeignKey(User, verbose_name='所有者')
+```
+##### help_text
+在表单输入框旁边, 会显示help_text, html标签会原样保留; 也可以仅仅把它当成注释
+```python
+title = models.CharField('标题', max_length=100, help_text='博文的<em>标题</em>')
+```
+##### default
+默认值, 可以是callable(lambda除外),可以是值,不能是可变对象(list,set...)
+```python
+title = models.CharField(max_length=100, default='Hello World')
+# 错误 callable([]) = False
+comments = models.JSONField(default=[])
+# 正确 callable(list) = True, 每次新建一个list
+comments = models.JSONField(default=list)
+# 关系型Field的default 一般 是是对方的pk
+owner = models.ForeignKey(User, default=1)
+```
+##### choices
+##### null
+##### blank
+##### primary_key
+##### unique
