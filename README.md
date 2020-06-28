@@ -42,3 +42,6 @@ git checkout Model和数据库-Model-Model简介
             * 抽象父类
             * 多表继承
             * 代理Model
+* 处理Http请求
+    * 处理URL
+        * Django如何处理请求
