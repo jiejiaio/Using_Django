@@ -44,4 +44,4 @@ git checkout Model和数据库-Model-Model简介
             * 代理Model
 * 处理Http请求
     * 处理URL
-        * Django如何处理请求
+        * [Django如何处理请求](https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86Http%E8%AF%B7%E6%B1%82-%E5%A4%84%E7%90%86URL-Django%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E8%AF%B7%E6%B1%82)
