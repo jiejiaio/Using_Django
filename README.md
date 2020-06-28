@@ -13,3 +13,17 @@ Django处理请求的步骤:
 &nbsp;&nbsp;匹配了urlpattern中的正则的参数, 包括有名字的参数和没名字的参数  
 5. 如果第3步没有匹配到, 或第4步抛出了异常, Django会调用特定的视图(views), 这些视图专门用于处理异常
 
+```python
+def year_archive(request, num):
+    pass
+def month_archive(request, **kwargs):
+    pass
+urlpatterns = [
+    path('articles/2003/', views.special_case_2003),
+    # 会给view传递一个位置参数(Positional Argument)
+    re_path(r'^articles/([0-9]{4})/$', views.year_archive),
+    # 会给view传递两个关键字参数(Keyword Argument)
+    path('articles/<int:year>/<int:month>/', views.month_archive),
+    path('articles/<int:year>/<int:month>/<slug:slug>/', views.article_detail),
+]
+```
