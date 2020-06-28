@@ -22,4 +22,4 @@ Django知识点集锦
     * [创建项目(使用Pycharm或命令行)](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE(%E4%BD%BF%E7%94%A8Pycharm%E6%88%96%E5%91%BD%E4%BB%A4%E8%A1%8C))
     * [项目的Git和Github配置](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE(%E4%BD%BF%E7%94%A8Pycharm%E6%88%96%E5%91%BD%E4%BB%A4%E8%A1%8C))
     * [常用配置(settings.py)](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE(settings.py))
-    * [懒人运行manage.py的方法](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE(%E4%BD%BF%E7%94%A8Pycharm%E6%88%96%E5%91%BD%E4%BB%A4%E8%A1%8C))
+    * [懒人运行manage.py的方法](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E6%87%92%E4%BA%BA%E8%BF%90%E8%A1%8Cmanage.py%E7%9A%84%E6%96%B9%E6%B3%95)
