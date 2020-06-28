@@ -1,9 +1,10 @@
+##### 关于Model
 - 一个Model类*通常* 对应数据库中的一张表
 - 一个Model实例对应数据表的一行记录
 - Model中的每个属性*通常* 对应数据表的一个字段(列名)
 - Django给每个Model提供了增删改查的API
 
-#####Model示例
+##### Model示例
 
 ```python
 from django.db import models
@@ -13,7 +14,7 @@ class Question(models.Model):
     pub_date = models.DateTimeField()
 ```
 
-#####Django会自动帮我们生成并执行建表SQL
+##### Django会自动帮我们生成并执行建表SQL
   - 表名称是app_label + '_' + model类名(小写,下划线分词)
   - id是Django自动帮我们加上的
 
@@ -29,7 +30,7 @@ CREATE TABLE `myapp_question` (
 ![Question表](01.png)
 ---
 
-#####要使Model生效, 需要注册app
+##### 要使Model生效, 需要注册app
 
 settings.py
 ```python
@@ -38,7 +39,7 @@ INSTALLED_APPS = [
     'myapp.apps.MyappCongig'
 ]
 ```
-#####并且migrate
+##### 并且migrate
 ```shell script
 python manage.py makemigrations myapp
 python manage.py migrate
