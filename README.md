@@ -12,6 +12,12 @@ Django知识点集锦
     点击以下的每个章节链接都会跳转到对应的**Branch**, 也可以在Github Branch中搜索你想看的章节
     
     欢迎在 [**Issues**](https://github.com/208352363/Using_Django/issues) 面板中提出你的问题，建议和观点.
+* 操作指南 
+```shell script
+git clone https://github.com/208352363/Using_Django.git
+# git checkout 分支名称, 例如:
+git checkout Model和数据库-Model-Model简介
+```
 * 准备工作
     * [安装Python](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%AE%89%E8%A3%85Python)
     * [安装Git](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%AE%89%E8%A3%85Git)
@@ -26,10 +32,10 @@ Django知识点集锦
 * Model和数据库
     * Model
         * [Model简介](https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Model%E7%AE%80%E4%BB%8B)
-        * [Field简介](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
-        * [Field一对一,多对一,多对多](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
-        * [Model之Meta,属性,方法](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
+        * Field简介
+        * Field一对一,多对一,多对多
+        * Model之Meta,属性,方法
         * Model继承
-            * [抽象父类](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
-            * [多表继承](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
-            * [代理Model](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
+            * 抽象父类
+            * 多表继承
+            * 代理Model
