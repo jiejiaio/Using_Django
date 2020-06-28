@@ -25,7 +25,7 @@ Django知识点集锦
     * [懒人运行manage.py的方法](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E6%87%92%E4%BA%BA%E8%BF%90%E8%A1%8Cmanage.py%E7%9A%84%E6%96%B9%E6%B3%95)
 * Model和数据库
     * Model
-        * [Model简介](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
+        * [Model简介](https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Model%E7%AE%80%E4%BB%8B)
         * [Field简介](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
         * [Field一对一,多对一,多对多](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
         * [Model之Meta,属性,方法](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%)
