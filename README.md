@@ -17,6 +17,9 @@ class ContactForm(forms.Form):
     cc_myself = forms.BooleanField(required=False)
 ```
 和`Model`中每个属性对应数据表的每个字段相似, `Form`的每个属性对应Html`<Form>`的每个`<input>`标签;  
+
 特别地, `ModelForm`可以直接将`Model`的每个属性通过`Form`映射到Html表单的每个输入框  
-`Form`中每一个`Field`都会对用户提交的数据进行校验
+
+`Form`中每一个`Field`都会对用户提交的数据进行校验  
+
 `Form`中每一个`Field`都有默认的`Widget`(各种`<input>`标签)
