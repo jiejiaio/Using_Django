@@ -21,33 +21,60 @@ git branch
 # 切换分支(章节) `git checkout 分支名称` 例如:
 git checkout Model和数据库-Model-Model简介
 ```
-* 准备工作
-    * [安装Python](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%AE%89%E8%A3%85Python)
-    * [安装Git](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%AE%89%E8%A3%85Git)
-    * [安装Pycharm](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%AE%89%E8%A3%85Pycharm)
-    * [(可选)安装MySQL](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-(%E5%8F%AF%E9%80%89)%E5%AE%89%E8%A3%85MySQL)
-    * [(可选)安装Postman](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-(%E5%8F%AF%E9%80%89)%E5%AE%89%E8%A3%85Postman)
-    * [(可选)安装FireFox Developer Edition](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-(%E5%8F%AF%E9%80%89)%E5%AE%89%E8%A3%85FireFox-Developer-Edition)
-    * [创建项目(使用Pycharm或命令行)](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE(%E4%BD%BF%E7%94%A8Pycharm%E6%88%96%E5%91%BD%E4%BB%A4%E8%A1%8C))
-    * [项目的Git和Github配置](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE(%E4%BD%BF%E7%94%A8Pycharm%E6%88%96%E5%91%BD%E4%BB%A4%E8%A1%8C)#-3)
-    * [常用配置(settings.py)](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE(settings.py))
-    * [懒人运行manage.py的方法](https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E6%87%92%E4%BA%BA%E8%BF%90%E8%A1%8Cmanage.py%E7%9A%84%E6%96%B9%E6%B3%95)
-* Model和数据库
-    * Model
-        * [Model简介](https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Model%E7%AE%80%E4%BB%8B)
-        * [Field简介](https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Field%E7%AE%80%E4%BB%8B)
-        * Field一对一,多对一,多对多
-        * Model之Meta,属性,方法
-        * Model继承
-            * 抽象父类
-            * 多表继承
-            * 代理Model
-* 处理Http请求
-    * 处理URL
-        * [Django如何处理请求](https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86Http%E8%AF%B7%E6%B1%82-%E5%A4%84%E7%90%86URL-Django%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E8%AF%B7%E6%B1%82)
-* 使用表单
-    * [Django表单简介](https://github.com/208352363/Using_Django/tree/%E4%BD%BF%E7%94%A8%E8%A1%A8%E5%8D%95-Django%E8%A1%A8%E5%8D%95%E7%AE%80%E4%BB%8B)
-* 处理文件
-    * [在Model中使用文件](https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E5%9C%A8Model%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%96%87%E4%BB%B6)
-    * [File对象](https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%AF%B9%E8%B1%A1)
-    * [文件存储(方式)](https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8(%E6%96%B9%E5%BC%8F))
+<details>
+  <summary><mark>准备工作</mark></summary>
+  <ul>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%AE%89%E8%A3%85Python" target="_blank">安装Python</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%AE%89%E8%A3%85Git" target="_blank">安装Git</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%AE%89%E8%A3%85Pycharm" target="_blank">安装Pycharm</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-(%E5%8F%AF%E9%80%89)%E5%AE%89%E8%A3%85MySQL" target="_blank">(可选)安装MySQL</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-(%E5%8F%AF%E9%80%89)%E5%AE%89%E8%A3%85Postman" target="_blank">(可选)安装Postman</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-(%E5%8F%AF%E9%80%89)%E5%AE%89%E8%A3%85FireFox-Developer-Edition" target="_blank">(可选)安装FireFox Developer Edition</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE(%E4%BD%BF%E7%94%A8Pycharm%E6%88%96%E5%91%BD%E4%BB%A4%E8%A1%8C)" target="_blank">创建项目(使用Pycharm或命令行)</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE(%E4%BD%BF%E7%94%A8Pycharm%E6%88%96%E5%91%BD%E4%BB%A4%E8%A1%8C)#-3" target="_blank">项目的Git和Github配置</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE(settings.py)" target="_blank">常用配置(settings.py)</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C-%E6%87%92%E4%BA%BA%E8%BF%90%E8%A1%8Cmanage.py%E7%9A%84%E6%96%B9%E6%B3%95" target="_blank">懒人运行manage.py的方法</a></li>
+  </ul>
+</details>
+<details>
+  <summary><mark>Model和数据库</mark></summary>
+  <details>
+    <summary><mark>Model</mark></summary>
+    <ul>
+      <li><a href="https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Model%E7%AE%80%E4%BB%8B" target="_blank">Model简介</a></li>
+      <li><a href="https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Field%E7%AE%80%E4%BB%8B" target="_blank">Field简介</a></li>
+      <li>Field一对一,多对一,多对多</li>
+      <li>Model之Meta,属性,方法</li>
+      <li>Model继承
+        <ul>
+          <li>抽象父类</li>
+          <li>多表继承</li>
+          <li>代理Model</li>
+        </ul>
+      </li>
+    </ul>
+  </details>
+</details>
+<details>
+  <summary><mark>处理Http请求</mark></summary>
+  <details>
+    <summary><mark>处理URL</mark></summary>
+    <ul>
+      <li><a href="https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86Http%E8%AF%B7%E6%B1%82-%E5%A4%84%E7%90%86URL-Django%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E8%AF%B7%E6%B1%82" target="_blank">Django如何处理请求</a></li>
+    </ul>
+  </details>
+</details>
+<details>
+  <summary><mark>使用表单</mark></summary>
+  <ul>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E4%BD%BF%E7%94%A8%E8%A1%A8%E5%8D%95-Django%E8%A1%A8%E5%8D%95%E7%AE%80%E4%BB%8B" target="_blank">Django表单简介</a></li>
+  </ul>
+</details>
+<details>
+  <summary><mark>处理文件</mark></summary>
+  <ul>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E5%9C%A8Model%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%96%87%E4%BB%B6" target="_blank">在Model中使用文件</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%AF%B9%E8%B1%A1" target="_blank">File对象</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8(%E6%96%B9%E5%BC%8F)" target="_blank">文件存储(方式)</a></li>
+  </ul>
+</details>
