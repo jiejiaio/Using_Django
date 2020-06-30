@@ -59,12 +59,14 @@ git checkout Model和数据库-Model-Model简介
 </details>
 <details>
   <summary><mark>处理Http请求</mark></summary>
-  <details>
-    <summary><mark>处理URL</mark></summary>
-    <ul>
-      <li><a href="https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86Http%E8%AF%B7%E6%B1%82-%E5%A4%84%E7%90%86URL-Django%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E8%AF%B7%E6%B1%82" target="_blank">Django如何处理请求</a></li>
-    </ul>
-  </details>
+  <blockquote>
+    <details>
+      <summary><mark>处理URL</mark></summary>
+      <ul>
+        <li><a href="https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86Http%E8%AF%B7%E6%B1%82-%E5%A4%84%E7%90%86URL-Django%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E8%AF%B7%E6%B1%82" target="_blank">Django如何处理请求</a></li>
+      </ul>
+    </details>
+  </blockquote>
 </details>
 <details>
   <summary><mark>使用表单</mark></summary>
