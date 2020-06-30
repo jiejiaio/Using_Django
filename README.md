@@ -1,4 +1,4 @@
-Django默认将(用户上传)文件存放在`MEDIA_ROOT`, 访问时以`MEDIA_URL`作为根路径
+Django默认将(用户上传)文件存放在`MEDIA_ROOT`, 访问时以`MEDIA_URL`作为根URL
 
 在Model中, 可以使用`FileField`或`Imagefield`来代表用户上传的文件,并提供了一系列文件操作API
 
@@ -26,7 +26,8 @@ class Car(models.Model):
 'http://media.example.com/cars/chevy.jpg'
 ```
 
-Django会在保存Model到数据库的同时保存文件; 重命名已保存的文件 示例:
+Django会在保存Model到数据库的同时保存文件;  
+重命名已保存的文件 示例:
 ```python
 >>> import os
 >>> from django.conf import settings
@@ -51,7 +52,7 @@ True
 287
 >>> image = Image.open(car.photo)  # 打不开
 # Raises ValueError: seek of closed file.
->>> car.photo.open()  # 调用open()才能打开
+>>> car.photo.open()  # 调用FieldFile.open()才能打开
 <ImageFieldFile: cars/chevy.jpg>
 >>> image = Image.open(car.photo)
 >>> image
