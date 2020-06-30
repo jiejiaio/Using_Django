@@ -50,4 +50,4 @@ git checkout Model和数据库-Model-Model简介
 * 处理文件
     * [在Model中使用文件](https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E5%9C%A8Model%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%96%87%E4%BB%B6)
     * File对象
-    * 文件存储(方式)
+    * [文件存储(方式)](https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8(%E6%96%B9%E5%BC%8F))
