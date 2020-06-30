@@ -82,3 +82,9 @@ git checkout Model和数据库-Model-Model简介
     <li><a href="https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8(%E6%96%B9%E5%BC%8F)" target="_blank">文件存储(方式)</a></li>
   </ul>
 </details>
+<details>
+  <summary><mark>用户,认证,授权</mark></summary>
+  <ul>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E7%94%A8%E6%88%B7%2C%E8%AE%A4%E8%AF%81%2C%E6%8E%88%E6%9D%83-%E7%AE%80%E4%BB%8B" target="_blank">Django Auth 简介</a></li>
+  </ul>
+</details>
