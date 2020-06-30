@@ -38,22 +38,24 @@ git checkout Model和数据库-Model-Model简介
 </details>
 <details>
   <summary><mark>Model和数据库</mark></summary>
-  <details>
-    <summary><mark>Model</mark></summary>
-    <ul>
-      <li><a href="https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Model%E7%AE%80%E4%BB%8B" target="_blank">Model简介</a></li>
-      <li><a href="https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Field%E7%AE%80%E4%BB%8B" target="_blank">Field简介</a></li>
-      <li>Field一对一,多对一,多对多</li>
-      <li>Model之Meta,属性,方法</li>
-      <li>Model继承
-        <ul>
-          <li>抽象父类</li>
-          <li>多表继承</li>
-          <li>代理Model</li>
-        </ul>
-      </li>
-    </ul>
-  </details>
+  <blockquote>
+    <details>
+      <summary><mark>Model</mark></summary>
+      <ul>
+        <li><a href="https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Model%E7%AE%80%E4%BB%8B" target="_blank">Model简介</a></li>
+        <li><a href="https://github.com/208352363/Using_Django/tree/Model%E5%92%8C%E6%95%B0%E6%8D%AE%E5%BA%93-Model-Field%E7%AE%80%E4%BB%8B" target="_blank">Field简介</a></li>
+        <li>Field一对一,多对一,多对多</li>
+        <li>Model之Meta,属性,方法</li>
+        <li>Model继承
+          <ul>
+            <li>抽象父类</li>
+            <li>多表继承</li>
+            <li>代理Model</li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+  </blockquote>
 </details>
 <details>
   <summary><mark>处理Http请求</mark></summary>
