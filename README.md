@@ -49,5 +49,5 @@ git checkout Model和数据库-Model-Model简介
     * [Django表单简介](https://github.com/208352363/Using_Django/tree/%E4%BD%BF%E7%94%A8%E8%A1%A8%E5%8D%95-Django%E8%A1%A8%E5%8D%95%E7%AE%80%E4%BB%8B)
 * 处理文件
     * [在Model中使用文件](https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E5%9C%A8Model%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%96%87%E4%BB%B6)
-    * File对象
+    * [File对象](https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%AF%B9%E8%B1%A1)
     * [文件存储(方式)](https://github.com/208352363/Using_Django/tree/%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8(%E6%96%B9%E5%BC%8F))
