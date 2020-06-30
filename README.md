@@ -1,6 +1,6 @@
-Django使用它自定义的 [django.core.files.File](https://docs.djangoproject.com/en/3.0/ref/files/file/#django.core.files.File) 而非Python的[file object](https://docs.python.org/3/glossary.html#term-file-object) 
+Django使用它自定义的 [django.core.files.File][1] 而非Python的 [file object][2]
 
-一般情况下使用Django的`File`就足够了, 我们可以在Python的`file object`的基础上构造一个Django的`File`对象
+一般情况下使用Django的[File][1]就足够了, 我们可以在Python的[file object][2]的基础上构造一个Django的[File][1]对象
 ```python
 >>> from django.core.files import File
 
@@ -26,3 +26,8 @@ True
 >>> f.closed
 True
 ```
+
+Django的[File][1]对象提供了许多属性和方法, 详见 [django.core.files.File][1]
+
+[1]:https://docs.djangoproject.com/en/3.0/ref/files/file/#django.core.files.File
+[2]:https://docs.python.org/3/glossary.html#term-file-object
