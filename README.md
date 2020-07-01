@@ -86,5 +86,6 @@ git checkout Model和数据库-Model-Model简介
   <summary><mark>用户,认证,授权</mark></summary>
   <ul>
     <li><a href="https://github.com/208352363/Using_Django/tree/%E7%94%A8%E6%88%B7%2C%E8%AE%A4%E8%AF%81%2C%E6%8E%88%E6%9D%83-%E7%AE%80%E4%BB%8B" target="_blank">Django Auth 简介</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E7%94%A8%E6%88%B7%2C%E8%AE%A4%E8%AF%81%2C%E6%8E%88%E6%9D%83-User%E5%AF%B9%E8%B1%A1" target="_blank">User对象</a></li>
   </ul>
 </details>
