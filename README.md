@@ -47,9 +47,9 @@ Django不存储明文密码, 直接修改数据库密码是不方便的, 除非�
 #### 对登录用户进行认证(Authenticate)
 **authenticate(request=None, \*\*credentials)**  
 
-要想验证你是我的网站的注册用户, 你需要提供一些**证明(credentials)**, 例如 Django默认组合:用户名+密码, 手机号+短信验证码, 邮箱+密码
+要想验证你是我的网站的注册用户, 你需要提供一些**证明(Credentials)**, 例如 用户名+密码(Django默认组合), 手机号+短信验证码, 邮箱+密码
 
-Django会把这些证明交给**Authentication Backend**去验证(如ModelBackend会去匹配数据库记录), 如果匹配, 则认证成功, 返回User对象
+Django会把这些证明交给**Authentication Backend**去验证(例如ModelBackend会去匹配数据库记录). 如果匹配, 则认证成功, 返回User对象
 
 如果没有匹配,或抛出`PermissionDenied`(权限不足)异常, 会返回`None`
 
