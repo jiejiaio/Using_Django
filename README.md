@@ -27,9 +27,7 @@ myuser.user_permissions.clear()
 ```
 
 #### 默认权限
-Django默认会为所有已注册的app中的Model创建`add`(增),`delete`(删),`change`(改),`view`(查看) 四种权限
-
-当你为新定义的Model执行`manage.py migrate`时, Django会为该Model创建默认权限
+当你为新定义的Model执行`manage.py migrate`时, Django会为该Model创建四种权限: `add`(增),`delete`(删),`change`(改),`view`(查看)
 
 如果我注册了一个app叫做blogs (`app_label='blogs'`), 并在blogs app中定义了一个Blog Model, 那么我可以通过如下方法测试用户是否有权限:
 - 增: `user.has_perm('blogs.add_blog')`
