@@ -1,18 +1,13 @@
-Django知识点集锦
----
-大家好, 在本系列视频中, 我将以短视频的方式逐个讲解Django知识点, 讲解过程中通常会辅以示例代码. 
+#### 如何实现登出
+##### 使用`logout(request)`
+在view函数中的使用示例:
+```python
+from django.contrib.auth import logout
 
-知识点目录参考了官方文档 [**Using Django**](https://docs.djangoproject.com/en/3.0/topics/), 不完全一致.
+def logout_view(request):
+    logout(request)  # logout()没有返回值
+    # 重定向 到 登出成功页面
+```
+如果用户并未登录, `logout()`不会抛异常
 
-* 系列简介
-* 准备工作
-    * 安装Python
-    * 安装Git
-    * 安装Pycharm
-    * (可选)安装MySQL
-    * (可选)安装Postman
-    * (可选)安装FireFox Developer Edition
-    * 创建项目(使用Pycharm或命令行)
-    * 常用配置(git和settings.py)
-    * 懒人运行manage.py的方法
-
+登出后, 用户的session将会被清空. 如果你想在session中保存**登出后也可用**的数据, 放在`logout()`后面去保存
