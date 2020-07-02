@@ -1,18 +1,13 @@
-Django知识点集锦
----
-大家好, 在本系列视频中, 我将以短视频的方式逐个讲解Django知识点, 讲解过程中通常会辅以示例代码. 
+当项目配置了这两个app(`django-admin startproject`默认配置): django.contrib.admin 和 django.contrib.auth, 我们便可以通过admin后台来管理用户, 权限 和 组. 
 
-知识点目录参考了官方文档 [**Using Django**](https://docs.djangoproject.com/en/3.0/topics/), 不完全一致.
+在admin后台可以创建用户, 权限 和 组, 可以把权限添加到组, 可以把权限赋予给用户, 可以给用户分配多个组.
 
-* 系列简介
-* 准备工作
-    * 安装Python
-    * 安装Git
-    * 安装Pycharm
-    * (可选)安装MySQL
-    * (可选)安装Postman
-    * (可选)安装FireFox Developer Edition
-    * 创建项目(使用Pycharm或命令行)
-    * 常用配置(git和settings.py)
-    * 懒人运行manage.py的方法
+Django会记录下每个用户 **在admin后台**的 对model的操作(User, Group, Permission 都是Model), **超级管理员**(superuser)可以查看所有历史记录, **员工**(staff)可以查看自己的历史记录.
 
+#### 创建用户
+注意事项: 如果你希望一个用户能够在admin创建新用户, 那么ta必须同时具有**新增用户**和**修改用户**的权限. 因为: 如果仅靠**新增用户**权限就允许你创建新用户, 那么ta可以通过创建一个超级管理员来间接地获取所有特权.
+
+[给予某个用户**修改用户**的权限]这个动作请三思而后行. 这样做相当于把ta变成超级管理员.  
+
+#### 修改密码
+用户的密码不会显示在admin(也不会在数据库存储明文), 但是相关加密方法会显示在admin, 并且可以修改密码
