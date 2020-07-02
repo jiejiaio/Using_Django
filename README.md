@@ -99,29 +99,30 @@ def user_gains_perms(request, user_id):
     user.has_perm('myapp.change_blogpost')  # 有
 ```
 #### 代理Model
-代理model的权限机制和普通model一致, 
+代理model的权限机制和普通model是一样的.  
+ 注意: 普通model的 content type 和 代理model的 content type 不共享, 代理model也不继承普通model的权限
 ```python
 class Person(models.Model):
     class Meta:
-        permissions = [('can_eat_pizzas', 'Can eat pizzas')]
+        permissions = [('can_change_name', '可以改名')]
 
-class Student(Person):
+class Citizen(Person):
     class Meta:
         proxy = True
-        permissions = [('can_deliver_pizzas', 'Can deliver pizzas')]
+        permissions = [('can_change_nationality', '可改变国籍')]
 
->>> # Fetch the content type for the proxy model.
->>> content_type = ContentType.objects.get_for_model(Student, for_concrete_model=False)
->>> student_permissions = Permission.objects.filter(content_type=content_type)
->>> [p.codename for p in student_permissions]
-['add_student', 'change_student', 'delete_student', 'view_student',
-'can_deliver_pizzas']
->>> for permission in student_permissions:
+>>> # 要获取代理model的content type, 必须设置 for_concrete_model=False
+>>> citizen_content_type = ContentType.objects.get_for_model(Student, for_concrete_model=False)
+>>> citizen_permissions = Permission.objects.filter(content_type=citizen_content_type)
+>>> [c.codename for c in citizen_permissions]  # 代理model的权限列表
+['add_citizen', 'change_citizen', 'delete_citizen', 'view_citizen',
+'can_change_nationality']
+>>> for permission in citizen_permissions:  # 给用户添加代理model的权限
 ...     user.user_permissions.add(permission)
->>> user.has_perm('app.add_person')
+>>> user.has_perm('app.add_person')  # 不继承父model的 默认 权限
 False
->>> user.has_perm('app.can_eat_pizzas')
+>>> user.has_perm('app.can_change_name')  # 也不继承父model的 自定义 权限
 False
->>> user.has_perms(('app.add_student', 'app.can_deliver_pizzas'))
+>>> user.has_perms(('app.add_citizen', 'app.can_change_nationality'))  # 只有代理model的权限
 True
 ```
