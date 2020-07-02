@@ -89,5 +89,6 @@ git checkout Model和数据库-Model-Model简介
     <li><a href="https://github.com/208352363/Using_Django/tree/%E7%94%A8%E6%88%B7%2C%E8%AE%A4%E8%AF%81%2C%E6%8E%88%E6%9D%83-User%E5%AF%B9%E8%B1%A1" target="_blank">User对象</a></li>
     <li><a href="https://github.com/208352363/Using_Django/tree/%E7%94%A8%E6%88%B7%2C%E8%AE%A4%E8%AF%81%2C%E6%8E%88%E6%9D%83-%E6%9D%83%E9%99%90%E5%92%8C%E6%9D%83%E9%99%90%E7%BB%84" target="_blank">权限和权限组</a></li>
     <li><a href="https://github.com/208352363/Using_Django/tree/%E7%94%A8%E6%88%B7%2C%E8%AE%A4%E8%AF%81%2C%E6%8E%88%E6%9D%83-%E4%BD%BF%E7%94%A8admin%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%94%A8%E6%88%B7" target="_blank">使用admin后台管理用户</a></li>
+    <li><a href="https://github.com/208352363/Using_Django/tree/%E7%94%A8%E6%88%B7%2C%E8%AE%A4%E8%AF%81%2C%E6%8E%88%E6%9D%83-如何实现登录" target="_blank">如何实现登录</a></li>
   </ul>
 </details>
