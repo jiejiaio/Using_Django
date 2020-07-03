@@ -2,7 +2,8 @@ Pycharm方式
 
 ![New Project...](01.png)
 ---
-windows 命令行方式
+windows 命令行方式  
+[mysqlclient下载](https://pypi.org/project/mysqlclient/#files), 文件名中的 'win_amd64' 重命名为 'win32' 
 ```shell script
 mkdir myproject
 cd myproject
@@ -13,7 +14,8 @@ python -m venv venv
 # 升级pip, 如有报错忽略
 pip install -U pip
 # 安装依赖
-pip install django mysqlclient djangorestframework
+pip install mysqlclient-2.0.1-cp38-cp38-win32.whl
+pip install django djangorestframework
 # 导出依赖至requirements.txt
 pip freeze > requirements.txt
 # 通过requirements.txt 安装依赖: pip install -r requirements.txt
