@@ -14,6 +14,9 @@ python -m venv venv
 # 升级pip, 如有报错忽略
 pip install -U pip
 # 安装依赖
+# 在线安装
+pip install https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient/mysqlclient‑1.4.6‑cp38‑cp38‑win32.whl
+# 下载到本地安装
 pip install mysqlclient-2.0.1-cp38-cp38-win32.whl
 pip install django djangorestframework
 # 导出依赖至requirements.txt
