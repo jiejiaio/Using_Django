@@ -4,8 +4,11 @@ SECRET_KEY = os.getenv('SECRET_KEY', '7&1y4zwt45)!g0t1%p^*%1kmn3n6)t*-ertsns1*du
 # 注意 bool('False') = True
 DEBUG = os.getenv('DEBUG', 'True') != 'False'
 ALLOWED_HOSTS = ['*']
+# 去掉 django.contrib.staticfiles 自动查找app中的static文件 的功能
+# 以 py manage.py collectstatic + 配置urls.py(见下文) 代替
 INSTALLED_APPS = [
     ...
+    # 'django.contrib.staticfiles',
     'rest_framework',
 ]
 DATABASES = {
