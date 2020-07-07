@@ -63,7 +63,7 @@ LOGGING = {
         'file': {
             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
             'class': 'logging.FileHandler',
-            'filename': os.path.join(BASE_DIR, 'myproject.log'),
+            'filename': os.path.join(BASE_DIR, 'app.log'),
             'formatter': 'verbose',
         },
     },
