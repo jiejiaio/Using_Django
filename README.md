@@ -35,6 +35,7 @@ COMMANDS = {
     5: 'createsuperuser --no-input --skip-check',
     6: 'collectstatic --no-input',
     7: 'test',
+    8: 'inspectdb table1 table2',
 }
 
 if __name__ == '__main__':
