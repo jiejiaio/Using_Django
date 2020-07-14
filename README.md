@@ -34,7 +34,8 @@ COMMANDS = {
     4: 'migrate',
     5: 'createsuperuser --no-input --skip-check',
     # 需要 django.contrib.staticfiles 这个app;
-    # 如果使用了whitenoise, 先注释掉(settings.py) STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    # 如果使用了whitenoise, 并想对static文件进行版本控制, 先注释掉(settings.py) STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    # 再运行 collectstatic, 生产环境中取消注释, 启动前 先运行 collectstatic
     6: 'collectstatic --no-input', 
     7: 'test',
     8: 'inspectdb XT_用户清单',
