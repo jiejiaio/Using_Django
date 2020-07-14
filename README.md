@@ -33,9 +33,11 @@ COMMANDS = {
     3: 'makemigrations',
     4: 'migrate',
     5: 'createsuperuser --no-input --skip-check',
-    6: 'collectstatic --no-input',  # 需要 django.contrib.staticfiles 这个app
+    # 需要 django.contrib.staticfiles 这个app;
+    # 如果使用了whitenoise, 先注释掉(settings.py) STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    6: 'collectstatic --no-input', 
     7: 'test',
-    8: 'inspectdb table1 table2',
+    8: 'inspectdb XT_用户清单',
     9: 'help',
 }
 
