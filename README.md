@@ -12,7 +12,9 @@ def main(commands=None, *ids):
             "forget to activate a virtual environment?"
         ) from exc
     print(sys.argv)
-    if commands is None:
+    # python manage.py -> sys.argv = ['...manage.py'] 
+    # python manage.py migrate -> sys.argv = ['...manage.py', 'migrate']
+    if commands is None or len(sys.argv) > 1:
         execute_from_command_line(sys.argv)
     else:
         for _id in ids:
