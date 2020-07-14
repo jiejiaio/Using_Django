@@ -33,9 +33,10 @@ COMMANDS = {
     3: 'makemigrations',
     4: 'migrate',
     5: 'createsuperuser --no-input --skip-check',
-    6: 'collectstatic --no-input',
+    6: 'collectstatic --no-input',  # 需要 django.contrib.staticfiles 这个app
     7: 'test',
     8: 'inspectdb table1 table2',
+    9: 'help',
 }
 
 if __name__ == '__main__':
